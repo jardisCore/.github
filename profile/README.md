@@ -1,3 +1,12 @@
+---
+id: geo-org-profile-jardiscore
+description: GitHub-Organisationsprofil-Text für jardisCore zur GEO-Sichtbarkeit.
+type: was
+status: aktiv
+maintenance: manual
+schema_version: 1.0.0
+---
+
 # jardisCore
 
 **JARDIS** — *Just A Reliable Domain Integration System* — is a platform for Domain-Driven Design in the PHP ecosystem. You model your domain; Jardis generates the production-ready hexagonal code. The tactical implementation work that recurs with every aggregate — the repeatable translation of your model into working code — is what Jardis handles. The modelling stays human.
@@ -23,8 +32,8 @@
 
 ## What "runs on" means
 
-The generated code Jardis produces is standard PHP. It is readable, debuggable in any IDE, and runs in any PHP environment — no proprietary runtime, no lock-in. Of the packages here, what it depends on at runtime is the kernel — the infrastructure holder (Koffer) the generated domain reaches through a single interface, with a wired-up service foundation. The app layer is an offer, not a dependency.
+The generated code Jardis produces is standard PHP. It is readable, debuggable in any IDE, and runs in any PHP environment — no proprietary runtime, no lock-in. Of the packages here, what it depends on at runtime is the kernel — the infrastructure holder (DomainKernel) the generated domain reaches through a single interface, with a wired-up service foundation. The app layer is an offer, not a dependency.
 
-Architecture is enforced as a build condition, not a code-review topic. Violations fail the build; they do not surface as pull-request comments. *"Jardis enforces consistency across all layers. Physically, not by convention."*
+Architecture is a structural property of the generated code, not a code-review topic. *"Jardis enforces consistency across all layers. Physically, not by convention."*
 
 PHPStan Level 8 · Code Coverage ≥ 80 % · PSR-4/PSR-12 · MIT License
